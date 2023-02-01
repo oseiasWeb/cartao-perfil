@@ -1,5 +1,40 @@
 :root {
-    --background-color: hsl(185, 75%, 39%);
-    --text-color: hsl(227, 10%, 46%); 
+    --cor-de-fundo: hsl(185, 75%, 39%);
+    --cor-texto: hsl(227, 10%, 79%);
+}
+span {
+    font-weight: 900;
+    color: black;
 }
 
+body {
+    background-color: var(--cor-de-fundo);
+    display: flex;
+}
+
+.cartao {
+    background-color: white;
+    height: 450px;
+    width: 350px;
+    border-radius: 5%;
+}
+
+.cartao .perfil {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.cartao .dados-pessoais,.dados-redes {
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+.cartao .dados-redes {
+    margin-top: 25px;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+ 
