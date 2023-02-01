@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
-:root {
-    --cor-de-fundo: hsl(185, 75%, 39%);
-    --cor-texto: hsl(227, 10%, 79%);
-}
+
 
 span {
     font-weight: 900;
