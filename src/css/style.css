@@ -1,43 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
-
-
-span {
-    font-weight: 900;
-    color: black;
-}
-
 body {
     background-color: var(--cor-de-fundo);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 30px;
+    height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+hr {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .cartao {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: var(--cor-cartao);
+    border-radius: 3%;
+    margin: 20px;
     height: 450px;
     width: 350px;
-    border-radius: 3%;
-    border: 1px solid;
 }
 
-.cartao .perfil {
+.cartao .dados-pessoais {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    font-size: 22px;
+}
+
+.cartao .dados-pessoais img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 35px;
-}
-
-.cartao .dados-pessoais,.dados-redes {
-    text-align: center;
-    color: var(--cor-texto);
-}
-
-.cartao .dados-redes{
     margin-top: 25px;
-    font-size: 19px;
+}
+
+.cartao .info-redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.info-redes .info .contador,.cartao .tipo-contador p{
+    font-weight: 700;
+}
+
+.cartao .dados-pessoais .idade,.cartao .dados-pessoais .local,.info-redes .info .tipo-contador {
+    color: var(--cor-texto);
 }
