@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,33 @@
     <title>Profile Card</title>
 
     <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
-    <main class="cartao">
-        <div class="dados-pessoais">
-            <img class="perfil" src="src/img/foto.png" alt="foto perfil">
-            <h1 class="nome"><span>Oséias Nogueira</span> 29</h1>
-            <h2 class="local">Brasil</h2>
-        </div>
 
-        <div class="dados-redes">
-            <ul class="icones">
-                <li><span class="cor1">80K</span> Curtidas</li>
-                <li><span class="cor1">803K</span> Compartilha</li>
-                <li><span class="cor1">3.5K</span> Fotos</li>
+<body>
+    <main class="container">
+        <div class="cartao">
+            <div class="dados-pessoais">
+                <img src="src/img/foto.png" alt="foto perfil">
+                <p>Oséias Nogueira <span>29</span></p>
+                <span class="local">Brasil</span>
+            </div>
+            <hr>
+
+            <ul class="info-redes">
+                    <li class="info">
+                        <p class="contador">80K</p>
+                        <span class="tipo-contador"></span>
+                    </li>
+                    <li class="info">
+                        <p class="contador"></p>
+                        <span class="tipo-contador"></span>
+                    </li>
+                    <li class="info">
+                        <p class="contador"></p>
+                        <span class="tipo-contador"></span>
+                    </li>
             </ul>
         </div>
     </main>
